@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-	<meta charset="utf-8">
-	<title>modlessflash</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <meta charset="UTF-8">
+  <title>modlessflash</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel='stylesheet' href='font-awesome-4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 	<link rel="manifest" href="./site.webmanifest">
@@ -11,82 +15,105 @@
 	<meta name="msapplication-TileColor" content="#000000">
 	<meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="98.css">
-	<link rel="stylesheet" href="docs.css">
-	<link rel="stylesheet" href="vs.css">
-	<link rel="stylesheet" href="style.css">
+
 </head>
-<body ontouchstart>
-	<aside>
-		<ul class="tree-view">
-			<details open>
-				<summary>
-					<li>
-						<strong style="color: purple">✨ [modlessflash | taking music commissions!] ✨</strong>
-					</li>
-				</summary>
-				<ul>
-					<li><a href="#music">🎵 [music] 🎧</a></li>
-					<li><a href="#chats">💬 [chats] 💬</a></li>
-					<li><a href="#vidstr">🔴 [videos / streams] 🔴</a></li>
-					<li><a href="#dnt">💰 [voluntary donations] 💰</a></li>
-				</ul>
-			</details>
-		</ul>
-	</aside>
-	<main>
-		<h2>[modlessflash | taking music commissions!]</h2>
-		<p>composer, pogrammer, artist, entertainer, dreamer etc</p>
-		<hr>
-		<section class="component">
-			<h3 id="music">🎵 [music] 🎧</h3>
-			<div>
+<body>
+
+<div class="container">
+			
+	<div class="st-container">
+	
+		<input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
+		<a href="#st-panel-1">Music</a>
+		<input type="radio" name="radio-set" id="st-control-2"/>
+		<a href="#st-panel-2">Chat</a>
+		<input type="radio" name="radio-set" id="st-control-3"/>
+		<a href="#st-panel-3">Vids</a>
+		<input type="radio" name="radio-set" id="st-control-4"/>
+		<a href="#st-panel-4">Support</a>
+		<input type="radio" name="radio-set" id="st-control-5"/>
+		<a href="#st-panel-5">Commissions</a>
+		
+		<div class="st-scroll">
+			
+			<section class="st-panel" id="st-panel-1">
+        <div class="st-deco" data-icon="&#xf001;"></div>
+				<h2>Music</h2>
 				<p>
-					<a href="https://open.spotify.com/artist/4yZpXIfUhXPaMwF9ijPRLj">spotify</a><br>
-					<a href="https://www.tiktok.com/@modlessflashmusic">tiktok @modlessflashmusic</a><br>
-					<a href="https://modlessflash.bandcamp.com/">bandcamp</a><br>
-					<a href="https://soundcloud.com/modlessflash/">soundcloud</a><br>
-					<a href="https://music.apple.com/us/artist/modless-flash/1583498268">apple music</a><br>
-					<a href="https://music.yandex.ru/artist/13037239">yandex.music</a><br>
-					<!--a href="https://www.youtube.com/@modlessflashmusic">youtube (releases, music-related videos)</a><br-->
-					<a href="https://www.youtube.com/channel/UC1hCVeQcOH0fl5T_HltlJkg">youtube (auto-generated artist page)</a><br><br>
+					<a href="https://www.youtube.com/@modlessflashmusic"><i class="fa fa-youtube-play" aria-hidden="true"></i> youtube (music videos & releases)</a><br>
+					<a href="https://www.tiktok.com/@modlessflashmusic"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 448 512"><path fill="currentColor" d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z"/></svg> tiktok</a><br>
+					<a href="https://modlessflash.bandcamp.com/"><i class="fa fa-bandcamp" aria-hidden="true"></i> bandcamp</a><br>
+					<a href="https://soundcloud.com/modlessflash/"><i class="fa fa-soundcloud" aria-hidden="true"></i> soundcloud</a><br>
+					<br>
+					<a href="https://open.spotify.com/artist/4yZpXIfUhXPaMwF9ijPRLj"><i class="fa fa-spotify" aria-hidden="true"></i> spotify</a><br>
+					<a href="https://music.apple.com/us/artist/modless-flash/1583498268"><i class="fa fa-apple" aria-hidden="true"></i> apple music</a><br>
+					<a href="https://music.yandex.ru/artist/13037239"><s><svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: text-bottom;" width="17" height="17" viewBox="0 0 165 165"><path fill="currentColor" d="M33.9834 16.8654C46.1223 7.87059 60.4694 2.43314 75.4224 1.08203V25.8256C65.7566 27.0787 56.5254 30.7794 48.6291 36.6305C38.7418 43.9569 31.4707 54.2669 27.8885 66.0399C24.3062 77.8129 24.6024 90.4254 28.7333 102.017C32.8642 113.609 40.6111 123.567 50.8315 130.421C61.0518 137.275 73.2043 140.663 85.4967 140.086C97.789 139.508 109.57 134.995 119.103 127.213C128.635 119.43 135.414 108.79 138.44 96.8622C140.551 88.542 140.757 79.9024 139.104 71.5733L159.882 54.8691L159.868 54.7344C165.477 70.1632 166.334 86.9485 162.285 102.911C157.962 119.951 148.278 135.151 134.66 146.269C121.042 157.386 104.212 163.833 86.6513 164.658C69.0909 165.483 51.7301 160.643 37.1296 150.851C22.5292 141.06 11.4621 126.835 5.56083 110.275C-0.340466 93.7153 -0.763563 75.6974 4.35394 58.8789C9.47145 42.0603 19.8586 27.3317 33.9834 16.8654Z"/><path fill="currentColor" d="M144.215 28.4141L144.302 28.6321L130.417 50.6853C125.367 43.2026 118.601 36.9743 110.682 32.5658V82.7519C110.682 98.1496 98.1999 110.632 82.8023 110.632C67.4046 110.632 54.9224 98.1496 54.9224 82.7519C54.9224 67.3543 67.4046 54.872 82.8023 54.872C88.5729 54.872 93.9341 56.6253 98.3822 59.6281V2.23047C116.483 5.71201 132.466 15.1453 144.215 28.4141Z"/></svg> yandex.music</s></a><br>
 				</p>
-			</div>
-		</section>
-		<hr>
-		<section class="component">
-			<h3 id="chats">💬 [chats] 💬</h3>
-			<div>
+			</section>
+			
+			<section class="st-panel st-color" id="st-panel-2">
+				<div class="st-deco" data-icon="&#xf086;"></div>
+				<h2>Chat</h2>
 				<p>
-					<a href="https://discord.gg/jd2XpDS">"Flashers" discord</a><br>
-					<a href="https://twitter.com/modlessflash">twitter</a><br>
-					<a href="https://vk.com/modlessflash111">vk</a><br>
-					<a href="https://t.me/modlessflash">telegram, dm</a><br>
+					<a href="https://discord.gg/jd2XpDS"><svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: text-bottom;" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"/></svg> discord (announcements & WIPs!)</a><br>
+					<a href="https://t.me/modlessflash"><i class="fa fa-telegram" aria-hidden="true"></i> telegram dm</a><br>
+					<a href="https://twitter.com/modlessflash"><i class="fa fa-twitter" aria-hidden="true"></i> twitter</a><br>
+					<a href="https://vk.com/modlessflash111"><i class="fa fa-vk" aria-hidden="true"></i> vk</a><br>
 				</p>
-			</div>	
-		</section>
-		<hr>
-		<section class="component">
-			<h3 id="vidstr">🔴 [videos / streams] 🔴</h3>
-			<div>
+			</section>
+			
+			<section class="st-panel" id="st-panel-3">
+				<div class="st-deco" data-icon="&#xf03d;"></div>
+				<h2>Vids</h2>
 				<p>
-					<!--a href="https://www.youtube.com/@modlessflashmusic">youtube (videos)</a><br-->
-					<a href="https://www.youtube.com/@modlessflashEN">youtube (videos with no schedule)</a><br>
-					<a href="https://www.twitch.tv/modlessflash">twitch (streams with no schedule)</a>
+					<a href="https://www.youtube.com/@modlessflashEN"><i class="fa fa-youtube-play" aria-hidden="true"></i> EN youtube (inactive)</a><br>
+					<!--a href="https://www.youtube.com/@modlessflashRU"><i class="fa fa-youtube-play" aria-hidden="true"></i> RU youtube (inactive)</a><br-->
+					<a href="https://www.twitch.tv/modlessflash"><i class="fa fa-twitch" aria-hidden="true"></i> twitch (inactive)</a>
 				</p>
-			</div>	
-		</section>
-		<hr>
-		<section class="component">
-			<h3 id="dnt">💰 [voluntary donations] 💰</h3>
-			<div>
+			</section>
+			
+			<section class="st-panel" id="st-panel-4">
+				<div class="st-deco" data-icon="&#xf004;"></div>
+				<h2>Support</h2>
 				<p>
-					<a href="http://www.donationalerts.ru/r/modlessflash">donationalerts (might not work with USD idk)</a><br>
-					<a href="https://www.paypal.com/paypalme/modlessflash0">paypal</a><br>
-					<a href="https://steamcommunity.com/tradeoffer/new/?partner=328276221&token=uxBIjrii">steam tradeoffer</a>
+					<a href="http://www.donationalerts.ru/r/modlessflash"><svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: text-bottom;" width="16" height="16" viewBox="0 0 69 80"><path fill="currentColor" d="M34.8586103,46.5882227 L29.4383109,46.5882227 C29.1227896,46.5896404 28.8214241,46.4709816 28.6091788,46.2617625 C28.3969336,46.0525435 28.2937566,45.7724279 28.325313,45.4910942 L28.8039021,40.6038855 C28.8504221,40.0844231 29.3353656,39.684617 29.9168999,39.6862871 L35.3371993,39.6862871 C35.6527206,39.6848694 35.9540862,39.8035282 36.1663314,40.0127473 C36.3785767,40.2219663 36.4817536,40.5020819 36.4501972,40.7834156 L35.9716081,45.6706244 C35.9250881,46.1900867 35.4401446,46.5898928 34.8586103,46.5882227 Z M35.7273704,37.0196078 L30.2062624,37.0196078 C29.5964177,37.0196078 29.1020408,36.5436108 29.1020408,35.9564386 L30.6037822,19.445421 C30.6711655,18.9085577 31.1463683,18.5059261 31.7080038,18.5098321 L37.2291117,18.5098321 C37.8389565,18.5098321 38.3333333,18.9858292 38.3333333,19.5730013 L36.7874231,36.0946506 C36.71732,36.6114677 36.2684318,37.0031485 35.7273704,37.0196078 Z M68.1907868,17.7655375 C68.7783609,18.4477209 69.0654113,19.3359027 68.9874243,20.2304671 L66.8294442,44.7595227 C66.7602449,45.5618649 66.4022166,46.3125114 65.8210422,46.8737509 L48.1740082,63.9078173 C47.5440361,64.5136721 46.7011436,64.8515656 45.8244317,64.849701 L27.0379034,64.849701 L10.5001116,80 L11.780782,64.8396809 L3.37070981,64.8396809 C2.42614186,64.8404154 1.52467299,64.4469919 0.886144518,63.7553546 C0.247616048,63.0637173 -0.0692823639,62.1374374 0.0127313353,61.2024067 L5.14549723,3.00601995 C5.32162283,1.29571214 6.77326374,-0.00377492304 8.50347571,8.23911697e-06 L51.3303063,8.23911697e-06 C52.3155567,-0.000274507348 53.2515294,0.428127083 53.8916472,1.17235281 L68.1907868,17.7655375 Z M55.1118136,40.0801644 L56.4832402,24.9398854 C56.5364472,24.0422509 56.2238954,23.1611024 55.6160145,22.4949959 L47.548799,13.2364798 C46.9095165,12.5050105 45.982605,12.084699 45.0076261,12.0841753 L19.5958971,12.0841753 C17.8656851,12.0803922 16.4140442,13.3798792 16.2379186,15.090187 L13.2127128,49.1583198 C13.1430685,50.0904539 13.4642119,51.0097453 14.1001037,51.6985265 C14.7359954,52.3873077 15.6300918,52.7843324 16.5706913,52.795594 L41.5588914,52.795594 C42.4258216,52.7976549 43.2601656,52.4674704 43.8882999,51.8737504 L54.1034116,42.2044127 C54.6867718,41.6406314 55.0449815,40.8860452 55.1118136,40.0801644 Z"></path></svg> donationalerts</a><br>
+					<a href="https://www.paypal.com/paypalme/modlessflash0"><i class="fa fa-paypal" aria-hidden="true"></i> paypal</a><br>
+					<a href="https://steamcommunity.com/tradeoffer/new/?partner=328276221&token=uxBIjrii"><i class="fa fa-steam" aria-hidden="true"></i> steam tradeoffer?xd</a>
 				</p>
-			</div>	
-		</section>
-	</main>
+			</section>
+
+			<section class="st-panel st-color" id="st-panel-5">
+				<div class="st-deco" data-icon="&#xf1da;"></div>
+				<h2>Commissions</h2>
+				<p> <!--class="right-align"-->
+<b>PRICING</b><br>
+<b style="color: green;">$100 AVG, $50 MIN</b> per 1 original minute of a track, depends on structural complexity, deadlines, level of attention to detail etc.<br><br>
+<b>COMMISSIONED TRACKS</b><br>
+Arrangement (to-be-released) | non-disclosed<br>
+                          <a href="https://modlessflash.bandcamp.com/track/vtubealerts-bgm-loop-1">BGM</a> | <a href="https://www.youtube.com/@VtubeAlerts"><i class="fa fa-youtube-play" aria-hidden="true"></i> VtubeAlerts</a><br>
+                <a href="https://modlessflash.bandcamp.com/album/destiny-shaper">OP + BGM + ED</a> | <a href="https://www.twitch.tv/mella_owlet"><i class="fa fa-twitch" aria-hidden="true"></i> Mella Owlet</a><br>
+ <a href="https://modlessflash.bandcamp.com/album/sunyata-myths-vol-1">8 char & location themes</a> | <a href="https://www.artstation.com/gornik"><svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: text-bottom;" width="16" height="16" viewBox="0 0 512 512"><path fill="currentColor" d="M2 377.4l43 74.3A51.4 51.4 0 0 0 90.9 480h285.4l-59.2-102.6zM501.8 350L335.6 59.3A51.4 51.4 0 0 0 290.2 32h-88.4l257.3 447.6 40.7-70.5c1.9-3.2 21-29.7 2-59.1zM275 304.5l-115.5-200L44 304.5z"></path></svg> Nikolai Gorishnii</a><br>
+      <a href="https://modlessflash.bandcamp.com/track/magic-outside-of-hogwarts">Classical / Hardcore</a> | <a href=""><i class="fa fa-twitter" aria-hidden="true"></i> Nuvolina</a><br>
+                <a href="https://modlessflash.bandcamp.com/track/village-of-fools">EDM / Darksynth</a> | <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i> Alex Kirisame</a><br><br>
+                <!--b>COMMISSIONED MIXES</b><br>
+osu!rewind 2023 (to-be-released)</a> | non-disclosed<br>
+            <a href="https://youtu.be/5W8vqbZhxSo">osu!rewind 2022</a> | <a href="https://www.youtube.com/@s1nqq"><i class="fa fa-youtube-play" aria-hidden="true"></i> s1nqq</a><br>
+ <a href="https://youtu.be/eKLV9IgdN-I">this is what we are, and what unites us</a> | <a href="https://twitter.com/nuvola_cc"><i class="fa fa-twitter" aria-hidden="true"></i> Nuvolina</a> & <a href="https://twitter.com/Myxomat66210515"><i class="fa fa-twitter" aria-hidden="true"></i> Myxo</a><br>
+ osu! Rewind 2019 (unreleased) | <a href="https://www.youtube.com/@3mplify"><i class="fa fa-youtube-play" aria-hidden="true"></i> 3mplify</a><br>
+             <a href="https://youtu.be/cmTJ4fNYuL8">osu! Rewind 2018</a> | <a href="https://www.youtube.com/@3mplify"><i class="fa fa-youtube-play" aria-hidden="true"></i> 3mplify</a><br>
+             <a href="https://youtu.be/Evl7RJYyubw">osu! Rewind 2017</a> | <a href="https://www.youtube.com/@3mplify"><i class="fa fa-youtube-play" aria-hidden="true"></i> 3mplify</a><br>
+             ... and more for KappaPraise, Mikan, Pachiru, Salty, Yello and other osu! community members!<br><br-->
+<b>MISC COMMISSIONS</b><br>
+trimming and preparing 418 phrases for the queue voice-over system in a recruitment office.<br>
+mashups/bootlegs/edits requested by s1nqq, tadahitotsu, 3mplify and other osu! community members.
+				</p>
+			</section>
+			
+		</div>
+		
+	</div>
+			
+</div>
+  
 </body>
 </html>
